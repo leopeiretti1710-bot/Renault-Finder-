@@ -1,0 +1,21 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --menta: #bff8dc;
+  --verde-texto: #0b4a2a;
+  --azul: #0b1f6b;
+  --negro: #000;
+  --fuente-titulo: 'DM Serif Display', Georgia, serif;
+  --fuente-fuerte: 'Bricolage Grotesque', sans-serif;
+  --fuente-texto: 'Instrument Sans', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--fuente-texto);
+  color: #111;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c4fae0 0%, #f4fbf7 38%, #f9f9f9 100%);
+  overflow-x: hidden;
+}
+button { font-family: inherit; cursor: pointer; }
+a { text-decoration: none; color: inherit; }
+:focus-visible { outline: 3px solid #0b1f6b; outline-offset: 3px; }
