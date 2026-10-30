@@ -18,7 +18,7 @@ export default function App() {
     navegar(nuevo.tipo === 'perdido' ? '/perdidos' : '/encontrados')
   }
 
-  let pagina
+  let pagina 
   if (path === '/buscar') pagina = <Buscar key={JSON.stringify(params)} objetos={objetos} params={params} />
   else if (path === '/perdidos') pagina = <Listado key="p" tipo="perdido" objetos={objetos} onReportar={setModal} />
   else if (path === '/encontrados') pagina = <Listado key="e" tipo="encontrado" objetos={objetos} onReportar={setModal} />
